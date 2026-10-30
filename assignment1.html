@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise University | Admissions 2026</title>
+    <link rel="stylesheet" href="/css/assignment1.css">
+    <script src="/js/assignment1.js"></script>
+</head>
+
+<body>
+    <header>
+            <div class="logo">
+                <b>SUNRISE UNIVERSITY</b>
+            </div>
+            </header>
+            <button class="menu-toggle" onclick="toggleMenu()"></button>
+            <div class="button-links">
+                <a href="#home">Home</a>  
+                <a href="#about">About</a>
+                <a href="#courses">Courses</a>
+                <a href="#gallery">Campus</a>
+                <a href="#students">Students</a>
+                <a href="#admissions">Apply Now</a>
+            </div>
+        </button>
+
+    <main>
+        <section class="hero" id="home">
+             <div class="hero-content">
+                <class="badge">
+                    ADMISSIONS OPEN 2026 27
+                </class="badge">
+                <h1>
+                    <b>Your Future</b>
+                    <br>
+                    <b>Our Responsibility.</b>
+                </h1>
+                <p>
+                    Discover a world of opportunities at
+                    <strong>Sunrise University</strong>.
+                    Experience industry-focused education,
+                    modern technology and a vibrant campus.
+                </p>
+                <div class="hero-buttons">
+                       <button onclick="Apply Now()">Apply for Admission →</button>
+                    </a>
+                       <button onclick="Explore Programs()">Explore Programs </button>
+                    </a>
+                </div>
+            </div>
+            <div class="form-box">
+                <h2>Start Your Journey</h2>
+                <p>
+                    Fill in your details to explore
+                    admission opportunities.
+                </p>
+
+                <form id="enquiryForm">
+                    <input
+                        type="text"
+                        id="studentName"
+                        placeholder="Full Name"
+                        aria-label="Full Name"
+                        required
+                    >
+                    <input
+                        type="email"
+                        id="studentEmail"
+                        placeholder="Email Address"
+                        aria-label="Email Address"
+                        required
+                    >
+                    <input
+                        type="tel"
+                        id="studentPhone"
+                        placeholder="10-Digit Mobile Number"
+                        aria-label="Mobile Number"
+                        pattern="[0-9]{10}"
+                        required
+                    >
+                    <select id="studentCourse"
+                            aria-label="Select Course"
+                            required>
+                        <option value="">Select Your Course</option>
+                        <option>Computer Engineering</option>
+                        <option>Cybersecurity</option>
+                        <option>Artificial Intelligence</option>
+                        <option>Information Technology</option>
+                        <option>Electronics Engineering</option>
+                        <option>Mechanical Engineering</option>
+                    </select>
+                    <button type="submit" class="btn">
+                        Submit Enquiry →
+                    </button>
+                    <p id="formMessage" role="status"></p>
+                </form>
+            </div>
+
+        </section>
+        <section class="stats" aria-label="College Highlights">
+
+            <div class="stat">
+                <h2>25+</h2>
+                <p>Years of Excellence</p>
+            </div>
+            <div class="stat">
+                <h2>50+</h2>
+                <p>Industry Partners</p>
+            </div>
+            <div class="stat">
+                <h2>10K+</h2>
+                <p>Alumni Network</p>
+            </div>
+            <div class="stat">
+                <h2>30+</h2>
+                <p>Modern Laboratories</p>
+            </div>
+        </section> 
+
+        <section class="container" id="about">
+            <div class="grid">
+                <div>
+                    <em class="section-label">
+                        ABOUT OUR UNIVERSITY
+                    </em>
+                    <h2 class="section-title">
+                        Where Innovation Meets Education
+                    </h2>
+                    <p>
+                        <strong>Sunrise University</strong> is a
+                        fictional institution dedicated to
+                        providing quality higher education.
+                    </p>
+                    <p>
+                        We believe in
+                        <em>learning beyond classrooms</em>
+                        through practical projects,
+                        research and innovation.
+                    </p>
+                    <p>
+                        Our mission is to develop
+                        <b>future-ready engineers and leaders</b>
+                        who can solve real-world challenges.
+                    </p>
+                    <a href="#courses" class="btn">
+                        <button onclick="Explore Programs()"></button>
+                        Discover Our Programs →
+                    </a>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT86SwqNEl9W3CEvc_JMD-bOvbMosfyRUN2Hd5E8DZ_U78Pk90g97kge9o&s=10" height="200px" width="300px"
+                        alt="Students celebrating graduation"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <section class="light-section" id="courses">
+            <div class="container">
+                <em class="section-label">
+                    ACADEMIC PROGRAMS
+                </em>
+                <h2 class="section-title">
+                    Explore Our Engineering Courses
+                </h2>
+                <p class="section-desc">
+                    Choose from industry-relevant programs<br>
+                    designed to prepare you for tomorrow.
+                </p>
+                <div class="cards">
+                    <article class="card">
+                        <em class="card-number">01</em>
+                        <br><br>
+                        <h3>Computer Engineering</h3>
+                        <p>
+                            Learn programming, software<br>
+                            development and computer systems.
+                        </p>
+                        <a href="#admissions">Explore Course →</a>
+                    </article>
+                    <article class="card">
+                        <em class="card-number">02</em>
+                        <br><br>
+                        <h3>Cybersecurity</h3>
+                        <p>
+                            Explore network security,<br>
+                            ethical hacking and digital defence.
+                        </p>
+                        <a href="#admissions">Explore Course →</a>
+                    </article>
+                    <article class="card">
+                        <em class="card-number">03</em>
+                        <br><br>
+                        <h3>AI & Machine Learning</h3>
+                        <p>
+                            Discover intelligent systems,
+                            data science and automation.
+                        </p>
+                        <a href="#admissions">Explore Course →</a>
+                    </article>
+                    <article class="card">
+                        <em class="card-number">04</em>
+                        <br><br>
+                        <h3>Information Technology</h3>
+                        <p>
+                            Study databases, cloud computing<br>
+                            and modern IT infrastructure.
+                        </p>
+                        <a href="#admissions">Explore Course →</a>
+                    </article>
+                    <article class="card">
+                        <em class="card-number">05</em>
+                        <br><br>
+                        <h3>Electronics Engineering</h3>
+                        <p>
+                            Explore circuits, embedded<br>
+                            systems and communication technology.
+                        </p>
+                        <a href="#admissions">Explore Course →</a>
+                    </article>
+                    <article class="card">
+                        <em class="card-number">06</em>
+                        <br><br>
+                        <h3>Mechanical Engineering</h3>
+                        <p>
+                            Learn product design, manufacturing<br>
+                            and mechanical systems.
+                        </p>
+                        <a href="#admissions">Explore Course →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <em class="section-label">
+                    THE SUNRISE ADVANTAGE
+                </em>
+                <h2 class="section-title">
+                    More Than Just a Degree.
+                </h2>
+                <p class="section-desc">
+                    An educational experience designed<br>
+                    to help students grow professionally<br>
+                    and personally.
+                </p>
+                <div class="feature-grid">
+                    <article class="feature">
+                        <h3>Industry Learning</h3>
+                        <p>
+                            Practical projects, workshops<br>
+                            and industry-oriented learning.
+                        </p>
+                    </article>
+                    <article class="feature">
+                        <h3>Innovation & Research</h3>
+                        <p>
+                            Opportunities to participate in<br>
+                            research, hackathons and innovation.
+                        </p>
+                    </article>
+                    <article class="feature">
+                        <h3>Career Development</h3>
+                        <p>
+                            Career guidance, skill development<br>
+                            and interview preparation.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="gallery">
+            <em class="section-label">
+                CAMPUS LIFE
+            </em>
+            <h2 class="section-title">
+                Experience Life at Sunrise
+            </h2>
+            <p class="section-desc">
+                Explore our campus environment and<br>
+                student learning spaces.
+            </p>
+            <div class="gallery">
+                <figure>
+                    <img src="https://cdn.pixabay.com/photo/2017/09/01/13/56/university-2704306_960_720.jpg" height="200px" width="300px"
+                        alt="University campus building"
+                    >
+                    <figcaption>
+                     University Campus
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91G0xsX8Twqg7IYanHNKwub0c0xV6s9dCmWZO28W4rA&s.jpg" height="200px" width="300px"
+                        alt="University Library"
+                    >
+                    <figcaption>
+                     University Library
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="light-section" id="students">
+            <div class="container">
+                <em class="section-label">
+                    STUDENT INFORMATION
+                </em>
+                <h2 class="section-title">
+                    Student Records
+                </h2>
+                <div class="table-wrapper">
+                    <table>
+                        <body>
+    <table>
+        <caption> Student Information</caption>
+        <thead>
+            <tr>
+                <th> Name</th>
+                <th> Roll No</th>
+                <th> Branch</th>
+                <th> Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Taanisha</td>
+                <td> 201</td>
+                <td> CSE</td>
+                <td> 1st Year</td>
+            </tr>
+            <tr>
+                <td> Nancy</td>
+                <td> 202</td>
+                <td>Electrical</td>
+                <td> 1st Year</td>
+            </tr>
+            <tr>
+                <td> Zayed</td>
+                <td> 203</td>
+                <td> IT</td>
+                <td> 1st Year</td>
+            </tr>
+            <tr>
+                <td> Arush</td>
+                <td> 204</td>
+                <td> AIML</td>
+                <td> 1st Year</td>
+            </tr>
+            <tr>
+                <td> Bhavesh</td>
+                <td> 205</td>
+                <td> Mechanical</td>
+                <td> 1st Year</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
+
+                        <caption>
+                            Academic Student Records - 2026
+                        </caption>
+                         <banner id="admissions">
+            <h2>
+                Ready to Shape Your Future?
+            </h2>
+            <p>
+                Admissions for the academic year<br>
+                2026 27 are now open.
+            </p>
+            <a href="#home" class="btn">
+                Enquire Now 
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h2>SUNRISE UNIVERSITY</h2>
+                <p>
+                    Empowering students through<br>
+                    education, innovation and technology.
+                </p>
+                <p>
+                    Location: Uttarakhand, India
+                </p>
+                <p>
+                    <small>
+                        This is a fictional college website<br>
+                        created for an educational assignment.
+                    </small>
+                </p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#courses">Our Courses</a>
+                <a href="#gallery">Campus Gallery</a>
+                <a href="#admissions">Admissions</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <small>
+                &copy; 2026 Sunrise University.<br>
+                All Rights Reserved.
+            </small>
+        </div>
+    </footer>
+</body>
+</html>
